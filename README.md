@@ -11,6 +11,17 @@
 5. `common`：统一响应、统一异常处理
 6. `mongoose`：从假数据过渡到真实数据库
 
+## 配置模块
+
+项目已经接入 `ConfigModule`，可以从 `.env` 读取配置。
+
+当前用到的配置：
+
+- `PORT`：服务启动端口
+- `JWT_SECRET`：JWT 签名和校验密钥
+
+启动前可以先参考 `.env.example` 创建自己的 `.env`。
+
 ## Mongoose 学习入口
 
 为了方便对照 `ww-server`，项目里补了一套最小的 Mongoose 示例代码：
